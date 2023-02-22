@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  get 'reviews/new'
-  get 'reviews/edit'
-  get 'restaurants/new'
-  get 'restaurants/index'
-  get 'restaurants/edit'
-  get 'restaurants/show'
+  # get 'reviews/new'
+  # get 'reviews/edit'
+  # get 'restaurants/new'
+  # get 'restaurants/index'
+  # get 'restaurants/edit'
+  # get 'restaurants/show'
   # get 'restaurant/new'
   # get 'restaurant/index'
   # get 'restaurant/edit'
@@ -14,6 +14,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   resources :restaurants do
-    resources :reviews, only: %I[new create update edit]
+    resources :reviews, only: %I[new create update edit delete]
   end
 end
