@@ -7,6 +7,11 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require 'faker'
 
+puts 'cleaning database...'
+Restaurant.destroy_all
+Review.destroy_all
+
+puts 'creating sample records...'
 10.times do
   restaurant = Restaurant.create(name: Faker::Restaurant.name,
                                  category: %w[chinese italian japanese french belgian].sample,
@@ -17,3 +22,4 @@ require 'faker'
     review.save
   end
 end
+puts 'Finished'
