@@ -18,9 +18,6 @@ class RestaurantsController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
-
-    # @task = Task.new(task_params)
-    # @task.save
   end
 
   def show

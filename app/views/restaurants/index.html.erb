@@ -1,7 +1,7 @@
 <h1>Restaurants#index</h1>
 <p>Find me in app/views/restaurants/index.html.erb</p>
 
-<h2>These are all <%= @restaurants.count %> restaurants in yoru db</h2>
+<h2>These are all <%= @restaurants.count %> restaurants in your db</h2>
 <ul>
   <% @restaurants.each do |restaurant| %>
     <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>

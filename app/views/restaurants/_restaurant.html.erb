@@ -4,4 +4,7 @@
      <%= restaurant.category %> |
      <%= link_to 'Delete', restaurant_path(restaurant), method: :delete,
          data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %> </li>
+     <% restaurant.reviews.each do |review| %>
+       <p class='card'><%= review.rating %> | <%= review.content %></p>
+     <% end %>
 </ul>
