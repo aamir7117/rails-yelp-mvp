@@ -45,6 +45,9 @@ gem "bootsnap", require: false
 # Simple Form
 gem "simple_form", github: "heartcombo/simple_form"
 
+# Generate fake records for db seed
+gem 'faker'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
